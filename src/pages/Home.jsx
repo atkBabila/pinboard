@@ -9,7 +9,7 @@ export default function Home() {
         <Nav/>
       </header>
       <main>
-        <section>
+        <section class="m-4">
           <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div class="grid gap-4">
                   <div>
