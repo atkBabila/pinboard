@@ -7,28 +7,36 @@ import Login from './pages/Login.jsx'
 import Register from './pages/Register.jsx'
 import Profile from './pages/Profile.jsx'
 import Pin from './pages/Pin.jsx'
+import Root from './Root.jsx'
 
 const router = createBrowserRouter([
   {
     path:'/',
-    element:<Home />
+    element:<Root />,
+    children:[
+      {
+        path:'/home',
+        element: <Home />
+      },
+      {
+        path:'/login',
+        element: <Login />
+      },
+      {
+        path:'/register',
+        element: <Register />
+      },
+      {
+        path:'/profile',
+        element: <Profile />
+      },
+      {
+        path:'/pin',
+        element: <Pin/>
+      }
+    ]
   },
-  {
-    path:'/login',
-    element: <Login />
-  },
-  {
-    path:'/register',
-    element: <Register />
-  },
-  {
-    path:'/profile',
-    element: <Profile />
-  },
-  {
-    path:'/pin',
-    element: <Pin/>
-  }
+  
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(

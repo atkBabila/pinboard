@@ -5,10 +5,7 @@ import { Footer } from '../components/Footer'
 export default function Home() {
   return (
     <>
-      <header>
-        <Nav/>
-      </header>
-      <main>
+
         <section className="m-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="grid gap-4">
@@ -57,8 +54,7 @@ export default function Home() {
               </div>
           </div>
         </section>
-        <Footer />
-      </main>
+        
     </>
   )
 }
