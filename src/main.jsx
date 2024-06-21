@@ -8,6 +8,7 @@ import Register from './pages/Register.jsx'
 import Profile from './pages/Profile.jsx'
 import Pin from './pages/Pin.jsx'
 import Root from './Root.jsx'
+import Contact from './pages/Contact.jsx'
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path:'pin',
         element: <Pin/>
+      },
+      {
+        path:'contact',
+        element: <Contact/>
       }
     ]
   },
